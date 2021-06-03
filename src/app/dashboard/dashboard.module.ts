@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { StockCardComponent } from './stock-card/stock-card.component';
@@ -11,7 +12,8 @@ import { StockCardComponent } from './stock-card/stock-card.component';
     StockCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ],
 
 })
